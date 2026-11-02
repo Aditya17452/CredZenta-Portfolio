@@ -1,0 +1,380 @@
+<!--
+title: CredZenta — AI Credit Appraisal for Banks, NBFCs & Fintech Lenders
+description: Faster, explainable credit appraisal. CredZenta analyses borrower documents and delivers risk insights and credit memos your team can trust.
+nav: home
+-->
+<!-- HERO -->
+<section class="hero">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="glow g1" aria-hidden="true"></div>
+  <div class="glow g2" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow" data-reveal><span class="dot"></span>AI credit appraisal for banks, NBFCs &amp; fintech lenders</span>
+      <h1 data-reveal style="--d:.08s">From loan file to credit decision — <span class="grad-text">in hours, not weeks.</span></h1>
+      <p class="lead" data-reveal style="--d:.16s">CredZenta reads, verifies and analyses borrower documents, then gives your credit team an explainable risk view and a ready-to-review credit memo. Your policy. Your decision. Just faster.</p>
+      <div class="cta-row" data-reveal style="--d:.24s">
+        <a class="btn btn-primary" href="contact.html">Book a Demo {{icon:arrow-right}}</a>
+        <a class="btn btn-ghost" href="#how">See how it works {{icon:arrow-right}}</a>
+      </div>
+      <p class="hero-note" data-reveal style="--d:.32s">{{icon:sparkles}} CredZenta <span class="typed" data-words="reads every document|cross-verifies sources|explains every score|drafts the credit memo|leaves the decision to you"></span></p>
+    </div>
+
+    <div class="hero-visual" data-tilt data-reveal="zoom" style="--d:.2s">
+      <div class="ws" id="cam" role="img" aria-label="Animated sample of the CredZenta credit workspace: documents are read, financial data is extracted, sources are verified, a risk band is assigned and a credit memo is drafted. Fictional data.">
+        <div class="scan-beam"></div>
+        <div class="ws-bar">
+          <div class="ws-dots"><i></i><i></i><i></i></div>
+          <span class="ws-title"><img src="assets/img/logo-mark.png" alt="" width="126" height="145">Credit Workspace</span>
+          <span class="ws-tag">Sample data</span>
+          <span class="ws-live"><i></i><span>AI working</span></span>
+        </div>
+        <div class="ws-body">
+          <div class="ws-side">
+            <div class="ws-label">Loan file</div>
+            <div class="doc">{{icon:file-text}}<span class="doc-name">Balance sheet<small>FY 2024–25 · PDF</small></span><span class="doc-st">{{icon:check}}</span></div>
+            <div class="doc">{{icon:bar-chart}}<span class="doc-name">Profit &amp; loss<small>3 years · PDF</small></span><span class="doc-st">{{icon:check}}</span></div>
+            <div class="doc">{{icon:receipt}}<span class="doc-name">GST returns<small>12 months</small></span><span class="doc-st">{{icon:check}}</span></div>
+            <div class="doc">{{icon:landmark}}<span class="doc-name">Bank statement<small>12 months · 2 accounts</small></span><span class="doc-st">{{icon:check}}</span></div>
+            <div class="ws-verify">
+              <div class="vrow">{{icon:check-circle}}GST ↔ revenue matched</div>
+              <div class="vrow">{{icon:check-circle}}Bank inflows reconciled</div>
+              <div class="vrow">{{icon:check-circle}}Policy rules applied</div>
+            </div>
+          </div>
+          <div class="ws-main">
+            <div class="borrower">
+              <span class="avatar">SE</span>
+              <div><b>Sample Enterprises Pvt Ltd</b><span>MSME · Working capital · ₹45 L requested</span></div>
+            </div>
+            <div class="metrics">
+              <div class="metric shimmer"><span class="src"></span><small>Revenue FY25</small><b data-to="4.82" data-dec="2" data-pre="₹" data-suf=" Cr">—</b></div>
+              <div class="metric shimmer"><span class="src"></span><small>DSCR</small><b data-to="1.62" data-dec="2" data-suf="x">—</b></div>
+              <div class="metric shimmer"><span class="src"></span><small>Current ratio</small><b data-to="1.41" data-dec="2">—</b></div>
+            </div>
+            <div class="risk">
+              <div class="risk-top"><span>Risk band</span><span class="pill neutral">Pending</span></div>
+              <div class="band"><span class="band-marker"></span></div>
+              <div class="band-legend"><span>Low</span><span>Moderate</span><span>High</span></div>
+              <div class="reasons">
+                <span class="chip pos">Stable bank inflows</span>
+                <span class="chip pos">Revenue matches GST</span>
+                <span class="chip neg">Leverage above policy band</span>
+              </div>
+            </div>
+            <div class="memo">
+              <span class="memo-ico">{{icon:file-check}}</span>
+              <div class="memo-txt"><b>Credit memo (CAM)</b><small>Waiting for analysis</small><div class="memo-bar"><i></i></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="ws-stage">
+          <span class="stage-txt">Initialising workspace…</span>
+          <span class="stage-dots"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+      </div>
+      <div class="float-chip f1" aria-hidden="true">{{icon:link}} Every figure source-linked</div>
+      <div class="float-chip f2" aria-hidden="true">{{icon:user-check}} Your team makes the call</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust" aria-label="Principles">
+  <div class="container">
+    <div class="trust-inner" data-reveal>
+      <span class="trust-label">Built for modern lending teams</span>
+      <div class="trust-items">
+        <span class="trust-item">{{icon:eye}} Explainable by design</span>
+        <span class="trust-item">{{icon:sliders}} Your rules, your policy</span>
+        <span class="trust-item">{{icon:user-check}} Human-in-the-loop</span>
+        <span class="trust-item">{{icon:lock}} Secure, isolated data</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">The problem</span>
+      <h2>Credit appraisal is still a paper chase.</h2>
+      <p>Most lenders still appraise loans the way they did a decade ago — spreadsheets, scanned PDFs and a dozen portals. It's slow, it's inconsistent, and it doesn't scale.</p>
+    </div>
+    <div class="grid g4">
+      <article class="card" data-reveal style="--d:0s"><span class="card-num">01</span><span class="icon-box">{{icon:pen}}</span><h3>Manual data entry</h3><p>Analysts spend hours re-keying financial statements and bank data before any real analysis starts.</p></article>
+      <article class="card" data-reveal style="--d:.08s"><span class="card-num">02</span><span class="icon-box">{{icon:search}}</span><h3>Scattered verification</h3><p>Financials, banking and tax data sit in different places, so cross-checking them is tedious and easy to miss.</p></article>
+      <article class="card" data-reveal style="--d:.16s"><span class="card-num">03</span><span class="icon-box">{{icon:file-text}}</span><h3>Inconsistent memos</h3><p>Every analyst writes differently, which makes reviews slower and decisions harder to compare.</p></article>
+      <article class="card" data-reveal style="--d:.24s"><span class="card-num">04</span><span class="icon-box">{{icon:history}}</span><h3>Thin audit trails</h3><p>When a decision is questioned later, the reasoning is often buried in emails and notes.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-alt" id="how">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">How it works</span>
+      <h2>One flow. <span class="grad-text">From upload to decision.</span></h2>
+    </div>
+    <div class="steps" data-inview>
+      <div class="steps-line" aria-hidden="true"><i></i><b></b></div>
+      <div class="step" style="--i:0"><div class="step-num">{{icon:upload}}<small>1</small></div><h3>Upload</h3><p>Your credit team uploads the borrower's documents into a secure workspace.</p></div>
+      <div class="step" style="--i:1"><div class="step-num">{{icon:scan}}<small>2</small></div><h3>Understand</h3><p>CredZenta extracts and structures the data from statements, returns and bank records.</p></div>
+      <div class="step" style="--i:2"><div class="step-num">{{icon:cpu}}<small>3</small></div><h3>Assess</h3><p>It cross-verifies sources, analyses financial health and applies your credit policy.</p></div>
+      <div class="step" style="--i:3"><div class="step-num">{{icon:user-check}}<small>4</small></div><h3>Decide</h3><p>Your team reviews an explainable risk view and a draft credit memo, then makes the call.</p></div>
+    </div>
+    <div class="center-cta"><a class="link-arrow" href="platform.html">Explore the platform {{icon:arrow-right}}</a></div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Key benefits</span>
+      <h2>Built to make every credit team sharper.</h2>
+    </div>
+    <div class="grid g4">
+      <article class="card" data-reveal><span class="icon-box teal">{{icon:zap}}</span><h3>Faster turnaround</h3><p>Designed to cut appraisal time from days to hours by automating the groundwork.</p></article>
+      <article class="card" data-reveal style="--d:.08s"><span class="icon-box">{{icon:trending-up}}</span><h3>Deeper analysis</h3><p>Ratios, trends, cash-flow patterns and red flags surfaced automatically, not hunted for.</p></article>
+      <article class="card" data-reveal style="--d:.16s"><span class="icon-box teal">{{icon:repeat}}</span><h3>Consistent decisions</h3><p>Every file is assessed against the same policy and the same memo structure.</p></article>
+      <article class="card" data-reveal style="--d:.24s"><span class="icon-box">{{icon:clipboard}}</span><h3>Audit-ready by default</h3><p>Every insight is traceable to its source, with a full record of who did what, and when.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT PREVIEW -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Product preview</span>
+      <h2>Your entire appraisal, in one workspace.</h2>
+      <p>No more switching between spreadsheets, PDFs and portals. CredZenta brings documents, analysis, policy checks and the credit memo into a single view your whole team can work from.</p>
+    </div>
+    <div class="tabs-shell" data-tabs data-inview data-reveal="zoom">
+      <div class="tablist" role="tablist" aria-label="Workspace views">
+        <span class="tab-ind" aria-hidden="true"></span>
+        <button class="tab" role="tab" id="t-ov" aria-controls="p-ov" aria-selected="true">{{icon:layers}}Overview</button>
+        <button class="tab" role="tab" id="t-fin" aria-controls="p-fin" aria-selected="false" tabindex="-1">{{icon:bar-chart}}Financials</button>
+        <button class="tab" role="tab" id="t-bank" aria-controls="p-bank" aria-selected="false" tabindex="-1">{{icon:landmark}}Banking</button>
+        <button class="tab" role="tab" id="t-risk" aria-controls="p-risk" aria-selected="false" tabindex="-1">{{icon:gauge}}Risk</button>
+        <button class="tab" role="tab" id="t-cam" aria-controls="p-cam" aria-selected="false" tabindex="-1">{{icon:file-check}}Credit Memo</button>
+        <span class="sample-tag">Sample data · fictional borrower</span>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="p-ov" aria-labelledby="t-ov" tabindex="0">
+        <div class="panel-grid">
+          <div class="box">
+            <div class="box-h">Borrower summary <span class="pill good">Low–Moderate risk</span></div>
+            <div class="kv">
+              <div><small>Borrower</small><b>Sample Enterprises Pvt Ltd</b></div>
+              <div><small>Segment</small><b>MSME · Manufacturing</b></div>
+              <div><small>Facility requested</small><b>₹45 L · Working capital</b></div>
+              <div><small>Vintage</small><b>9 years</b></div>
+              <div><small>Revenue FY25</small><b>₹4.82 Cr</b></div>
+              <div><small>DSCR</small><b>1.62x</b></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-h">File status</div>
+            <ul class="clean checklist">
+              <li>{{icon:check-circle}} Documents: 4 of 4 received</li>
+              <li>{{icon:check-circle}} Data extracted &amp; validated</li>
+              <li>{{icon:check-circle}} Sources cross-verified</li>
+              <li>{{icon:check-circle}} Policy checks: 11 pass · 1 review</li>
+              <li>{{icon:check-circle}} Draft credit memo ready</li>
+            </ul>
+            <div style="margin-top:18px"><div class="progress"><i style="--w:92%"></i></div><small style="color:var(--muted);font-size:.78rem">Awaiting credit manager review</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="p-fin" aria-labelledby="t-fin" tabindex="0" hidden>
+        <div class="panel-grid">
+          <div class="box">
+            <div class="box-h">Spread financials <span class="mono" style="color:var(--muted)">₹ Lakh</span></div>
+            <table class="table">
+              <thead><tr><th>Line item</th><th>FY23</th><th>FY24</th><th>FY25</th></tr></thead>
+              <tbody>
+                <tr><td>Revenue</td><td>368</td><td>421</td><td>482 <span class="up">▲</span></td></tr>
+                <tr><td>EBITDA</td><td>41</td><td>49</td><td>58 <span class="up">▲</span></td></tr>
+                <tr><td>PAT</td><td>17</td><td>21</td><td>26 <span class="up">▲</span></td></tr>
+                <tr><td>Total debt</td><td>96</td><td>118</td><td>131 <span class="down">▲</span></td></tr>
+                <tr><td>Net worth</td><td>104</td><td>122</td><td>145 <span class="up">▲</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="box">
+            <div class="box-h">Revenue vs EBITDA</div>
+            <svg class="chart" viewBox="0 0 300 180" aria-label="Bar chart of revenue and EBITDA for FY23 to FY25 (sample data)" role="img">
+              <line class="grid-l" x1="20" x2="300" y1="40" y2="40"/><line class="grid-l" x1="20" x2="300" y1="90" y2="90"/><line class="grid-l" x1="20" x2="300" y1="140" y2="140"/>
+              <rect class="bar" style="--i:0" x="40" y="62" width="34" height="78" rx="6" fill="#5233F5"/>
+              <rect class="bar" style="--i:1" x="78" y="131" width="34" height="9" rx="4" fill="#14D9A7"/>
+              <rect class="bar" style="--i:2" x="130" y="50" width="34" height="90" rx="6" fill="#5233F5"/>
+              <rect class="bar" style="--i:3" x="168" y="129" width="34" height="11" rx="4" fill="#14D9A7"/>
+              <rect class="bar" style="--i:4" x="220" y="36" width="34" height="104" rx="6" fill="#5233F5"/>
+              <rect class="bar" style="--i:5" x="258" y="127" width="34" height="13" rx="4" fill="#14D9A7"/>
+              <text x="62" y="160">FY23</text><text x="152" y="160">FY24</text><text x="242" y="160">FY25</text>
+            </svg>
+            <div class="legend"><span><i style="background:#5233F5"></i>Revenue</span><span><i style="background:#14D9A7"></i>EBITDA</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="p-bank" aria-labelledby="t-bank" tabindex="0" hidden>
+        <div class="panel-grid">
+          <div class="box">
+            <div class="box-h">Monthly inflows vs outflows</div>
+            <svg class="chart" viewBox="0 0 320 170" role="img" aria-label="Line chart of monthly bank inflows and outflows over 12 months (sample data)">
+              <line class="grid-l" x1="0" x2="320" y1="30" y2="30"/><line class="grid-l" x1="0" x2="320" y1="80" y2="80"/><line class="grid-l" x1="0" x2="320" y1="130" y2="130"/>
+              <polyline class="line" fill="none" stroke="#5233F5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="5,92 33,84 61,88 89,72 117,76 145,64 173,70 201,58 229,62 257,50 285,54 313,44"/>
+              <polyline class="line" fill="none" stroke="#14D9A7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="5,104 33,98 61,102 89,90 117,94 145,84 173,88 201,80 229,82 257,72 285,76 313,68"/>
+              <text x="2" y="160">Apr</text><text x="150" y="160">Sep</text><text x="292" y="160">Mar</text>
+            </svg>
+            <div class="legend"><span><i style="background:#5233F5"></i>Inflows</span><span><i style="background:#14D9A7"></i>Outflows</span></div>
+          </div>
+          <div class="box">
+            <div class="box-h">Banking signals</div>
+            <div class="signal"><span>Cheque / EMI bounces</span><span class="pill good">None found</span></div>
+            <div class="signal"><span>Cash-flow stability</span><span class="pill good">Stable</span></div>
+            <div class="signal"><span>Top-5 counterparty concentration</span><span class="pill warn">Review</span></div>
+            <div class="signal"><span>Declared revenue vs bank credits</span><span class="pill good">Consistent</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="p-risk" aria-labelledby="t-risk" tabindex="0" hidden>
+        <div class="panel-grid">
+          <div class="box">
+            <div class="box-h">Risk view <span class="pill good">Low–Moderate</span></div>
+            <div class="band" style="margin:8px 0 6px"><span class="band-marker" style="left:30%"></span></div>
+            <div class="band-legend"><span>Low</span><span>Moderate</span><span>High</span></div>
+            <div style="margin-top:18px" class="checklist">
+              <div class="signal"><span>Liquidity</span><span class="pill good">Adequate</span></div>
+              <div class="signal"><span>Leverage</span><span class="pill warn">Above policy band</span></div>
+              <div class="signal"><span>Profitability trend</span><span class="pill good">Improving</span></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-h">Early warning signals</div>
+            <div class="row">{{icon:alert}} Debt rising faster than net worth <span class="pill warn">Watch</span></div>
+            <div class="row">{{icon:alert}} Customer concentration in top 5 <span class="pill warn">Review</span></div>
+            <div class="row">{{icon:check-circle}} No statutory dues overdue <span class="pill good">Clear</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="p-cam" aria-labelledby="t-cam" tabindex="0" hidden>
+        <div class="memo-doc">
+          <img class="wm" src="assets/img/logo-mono.png" alt="" loading="lazy">
+          <div class="box-h" style="margin-bottom:6px"><h4>Credit Appraisal Memo — Draft</h4><span class="pill neutral">Editable · v1</span></div>
+          <small style="color:var(--muted)">Sample Enterprises Pvt Ltd · Working capital ₹45 L · Prepared for review</small>
+          <div class="memo-sec"><b>1. Executive summary</b><p>Nine-year-old manufacturing MSME with three years of revenue growth and stable banking behaviour. Draft view: Low–Moderate risk, subject to review of leverage.</p></div>
+          <div class="memo-sec"><b>2. Financial analysis</b><p>Revenue up 14% year-on-year; EBITDA margin steady at ~12%. DSCR of 1.62x against policy minimum.</p><div class="skel" style="width:88%"></div><div class="skel" style="width:72%"></div></div>
+          <div class="memo-sec"><b>3. Banking &amp; cash flow</b><p>Bank credits consistent with declared turnover; no bounces in 12 months.</p><div class="skel" style="width:64%"></div></div>
+          <div class="memo-sec"><b>4. Risks &amp; mitigants</b><div class="skel" style="width:80%"></div><div class="skel" style="width:58%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLAINABILITY -->
+<section class="section">
+  <div class="container split">
+    <div class="split-copy" data-reveal="left">
+      <span class="kicker">Explainability</span>
+      <h2>Every score comes with <span class="grad-text">its reasons.</span></h2>
+      <p>Black-box AI has no place in lending. CredZenta shows why a borrower is rated the way they are — which factors helped, which hurt, and where each number came from — so your team can trust it, challenge it, and defend it.</p>
+      <ul class="clean ticks">
+        <li>{{icon:check}} Which factors helped, and which hurt</li>
+        <li>{{icon:check}} Where every number came from</li>
+        <li>{{icon:check}} Plain language your reviewers can defend</li>
+      </ul>
+    </div>
+    <div class="xcard" data-inview data-reveal="right" aria-label="Sample explainable risk card">
+      <div class="xcard-head">
+        <div><b>Sample Enterprises Pvt Ltd</b><small>Risk view · Sample data</small></div>
+        <div class="gauge">
+          <svg viewBox="0 0 100 56" aria-hidden="true">
+            <defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#14D9A7"/><stop offset="1" stop-color="#5233F5"/></linearGradient></defs>
+            <path d="M10 50a40 40 0 0 1 80 0" fill="none" stroke="var(--line)" stroke-width="9" stroke-linecap="round"/>
+            <path class="arc" d="M10 50a40 40 0 0 1 80 0" fill="none" stroke="url(#gg)" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+          <span>Low–Mod</span>
+        </div>
+      </div>
+      <div class="factor-group">
+        <h4 class="pos">{{icon:trending-up}} Top positive factors</h4>
+        <div class="factor" tabindex="0"><span>Consistent monthly bank inflows</span><span class="src-tag">{{icon:link}}Bank stmt · Apr–Mar</span><div class="fbar"><i style="--w:86%;--d:.1s"></i></div></div>
+        <div class="factor" tabindex="0"><span>Declared revenue matches GST filings</span><span class="src-tag">{{icon:link}}GSTR-3B · FY25</span><div class="fbar"><i style="--w:74%;--d:.2s"></i></div></div>
+        <div class="factor" tabindex="0"><span>DSCR comfortably above policy minimum</span><span class="src-tag">{{icon:link}}P&amp;L · p.3</span><div class="fbar"><i style="--w:62%;--d:.3s"></i></div></div>
+      </div>
+      <div class="factor-group" style="margin-top:12px">
+        <h4 class="neg">{{icon:alert}} Top risk factors</h4>
+        <div class="factor" tabindex="0"><span>Debt-to-equity above policy band</span><span class="src-tag">{{icon:link}}Balance sheet · p.2</span><div class="fbar neg"><i style="--w:48%;--d:.4s"></i></div></div>
+        <div class="factor" tabindex="0"><span>Top-5 customer concentration</span><span class="src-tag">{{icon:link}}Bank stmt · credits</span><div class="fbar neg"><i style="--w:34%;--d:.5s"></i></div></div>
+      </div>
+      <div class="x-foot">{{icon:user-check}} Recommendation only — final decision by your credit committee.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Who it's for</span>
+      <h2>Made for India's lenders.</h2>
+    </div>
+    <div class="grid g3">
+      <article class="card aud-card" data-reveal><span class="icon-box">{{icon:landmark}}</span><h3>Banks</h3><p>Speed up MSME and commercial credit without compromising on rigour.</p></article>
+      <article class="card aud-card" data-reveal style="--d:.1s"><span class="icon-box teal">{{icon:building}}</span><h3>NBFCs</h3><p>Scale your underwriting without scaling your headcount at the same rate.</p></article>
+      <article class="card aud-card" data-reveal style="--d:.2s"><span class="icon-box">{{icon:zap}}</span><h3>Fintech lenders</h3><p>Bring structured, explainable credit analysis into fast digital journeys.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section class="section">
+  <div class="container">
+    <div class="dark-band" data-reveal="zoom">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="sec-wrap">
+        <div>
+          <span class="kicker" style="color:var(--teal)">Security snapshot</span>
+          <h2 style="margin:14px 0 16px">Built for regulated finance.</h2>
+          <p>Borrower data is sensitive. CredZenta is built with encryption, strict access control and isolated data for every institution — so your data stays yours.</p>
+          <div class="sec-pillars">
+            <div class="sec-pillar">{{icon:lock}} Encryption in transit and at rest</div>
+            <div class="sec-pillar">{{icon:key}} Strict, role-based access control</div>
+            <div class="sec-pillar">{{icon:database}} Isolated data for every institution</div>
+          </div>
+          <a class="link-arrow" href="technology.html#security">Learn about our technology {{icon:arrow-right}}</a>
+        </div>
+        <div class="vault" aria-hidden="true">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+          <div class="vault-core">{{icon:shield-check}}</div>
+          <span class="vault-tag t1">{{icon:lock}} Encrypted</span>
+          <span class="vault-tag t2">{{icon:key}} Role-based</span>
+          <span class="vault-tag t3">{{icon:history}} Fully logged</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band" data-reveal="zoom">
+      <img class="mark" src="assets/img/logo-mark.png" alt="" width="126" height="145" loading="lazy">
+      <h2>See CredZenta on a real loan file.</h2>
+      <p>Book a 30-minute walkthrough and see how your team could appraise faster, with more confidence.</p>
+      <div class="cta-row"><a class="btn btn-light" href="contact.html">Book a Demo {{icon:arrow-right}}</a></div>
+    </div>
+  </div>
+</section>

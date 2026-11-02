@@ -1,0 +1,125 @@
+<!--
+title: Book a Demo — CredZenta
+description: See CredZenta on your kind of loan file. Book a 30-minute walkthrough.
+nav: contact
+-->
+<section class="page-hero" style="padding-bottom:56px">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="glow g1" aria-hidden="true"></div>
+  <div class="container">
+    <span class="eyebrow" data-reveal><span class="dot"></span>Book a Demo</span>
+    <h1 data-reveal style="--d:.08s">See CredZenta on <span class="grad-text">your kind of loan file.</span></h1>
+    <p class="lead" data-reveal style="--d:.16s">A 30-minute walkthrough tailored to your lending products, policy and team.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container contact-wrap">
+    <div class="form-card" data-reveal>
+      <form id="demo-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="f-name">Full name <span class="req">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <span class="err" id="e-name" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="f-email">Work email <span class="req">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <span class="err" id="e-email" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone number</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="e-phone">
+            <span class="err" id="e-phone" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="f-inst">Institution name <span class="req">*</span></label>
+            <input id="f-inst" name="institution" type="text" autocomplete="organization" required aria-describedby="e-inst">
+            <span class="err" id="e-inst" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="f-type">Institution type <span class="req">*</span></label>
+            <select id="f-type" name="institution_type" required aria-describedby="e-type">
+              <option value="">Select…</option><option>Bank</option><option>NBFC</option><option>Fintech lender</option><option>Co-operative bank</option><option>Other</option>
+            </select>
+            <span class="err" id="e-type" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="f-role">Your role <span class="req">*</span></label>
+            <select id="f-role" name="role" required aria-describedby="e-role">
+              <option value="">Select…</option><option>Credit / Underwriting</option><option>Risk</option><option>Operations</option><option>Technology</option><option>Leadership</option><option>Other</option>
+            </select>
+            <span class="err" id="e-role" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="f-vol">Monthly loan applications</label>
+            <select id="f-vol" name="volume">
+              <option value="">Select…</option><option>Under 100</option><option>100–500</option><option>500–2,000</option><option>2,000+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-focus">Primary lending focus</label>
+            <select id="f-focus" name="focus">
+              <option value="">Select…</option><option>MSME</option><option>Corporate / Commercial</option><option>Retail</option><option>Mixed</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-msg">What would you like to see? <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+            <textarea id="f-msg" name="message" rows="4"></textarea>
+          </div>
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="consent-wrap field full">
+            <label class="consent"><input type="checkbox" name="consent" required aria-describedby="e-consent"><span>I agree to be contacted by CredZenta about this request, as per the <a href="privacy.html">Privacy Policy</a>. <span class="req" style="color:var(--indigo-text)">*</span></span></label>
+            <span class="err" id="e-consent" role="alert"></span>
+          </div>
+          <div class="form-status" role="alert" aria-live="assertive"></div>
+          <div class="form-foot">
+            <button class="btn btn-primary" type="submit"><span class="spinner" aria-hidden="true"></span>Request a Demo {{icon:arrow-right}}</button>
+            <small>We reply within 1–2 business days.</small>
+          </div>
+        </div>
+      </form>
+      <div class="success" role="status" aria-live="polite">
+        <div class="success-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Request received</h3>
+        <p>Thank you — your request is in. Our team will reach out within 1–2 business days to schedule your walkthrough.</p>
+      </div>
+    </div>
+
+    <aside class="side-stack">
+      <div class="card" data-reveal="right">
+        <h3 style="margin:0 0 20px">What happens next</h3>
+        <div class="next-steps">
+          <div class="ns"><span class="ns-n">1</span><div><b>We reach out</b><p>Our team contacts you to understand your lending products and goals.</p></div></div>
+          <div class="ns"><span class="ns-n">2</span><div><b>Tailored demo</b><p>We walk you through CredZenta using scenarios relevant to your book.</p></div></div>
+          <div class="ns"><span class="ns-n">3</span><div><b>Pilot discussion</b><p>If it's a fit, we discuss a pilot plan for your team.</p></div></div>
+        </div>
+      </div>
+      <div class="card reach" data-reveal="right" style="--d:.1s">
+        <h3 style="margin:0 0 8px">Other ways to reach us</h3>
+        <a href="mailto:sakshamservices2025@gmail.com">{{icon:mail}} sakshamservices2025@gmail.com</a>
+        <a href="https://www.linkedin.com/company/credzenta" target="_blank" rel="noopener">{{icon:linkedin}} CredZenta on LinkedIn</a>
+        <div>{{icon:map-pin}} India</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">FAQ</span>
+      <h2>Questions lenders ask us.</h2>
+    </div>
+    <div class="faq" data-reveal>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa1">Does CredZenta make the final lending decision?<span class="pm">{{icon:plus}}</span></button><div class="faq-a" id="fa1"><div><p>No. CredZenta is a decision-support platform. It prepares analysis and a draft memo; your credit team makes and owns every decision.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa2">Can we use our own credit policy?<span class="pm">{{icon:plus}}</span></button><div class="faq-a" id="fa2"><div><p>Yes. You define your eligibility rules and thresholds, and CredZenta applies them consistently to every file.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa3">What documents does it work with?<span class="pm">{{icon:plus}}</span></button><div class="faq-a" id="fa3"><div><p>Common borrower documents such as financial statements, tax returns and bank statements. We'll cover your specific document set during the demo.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa4">How is borrower data protected?<span class="pm">{{icon:plus}}</span></button><div class="faq-a" id="fa4"><div><p>Data is encrypted, isolated per institution, accessible only by role, and every action is logged.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa5">Does it replace our loan origination system?<span class="pm">{{icon:plus}}</span></button><div class="faq-a" id="fa5"><div><p>No. CredZenta works alongside your existing systems and focuses on the appraisal itself.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa6">How long does it take to get started?<span class="pm">{{icon:plus}}</span></button><div class="faq-a" id="fa6"><div><p>It depends on your products and integrations. We'll share a clear onboarding plan after the demo.</p></div></div></div>
+    </div>
+  </div>
+</section>

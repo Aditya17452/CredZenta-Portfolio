@@ -1,0 +1,225 @@
+<!--
+title: Technology — CredZenta
+description: Coordinated, explainable AI with human-in-the-loop review, secure integrations and enterprise-grade data protection.
+nav: technology
+-->
+<section class="page-hero">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="glow g1" aria-hidden="true"></div>
+  <div class="container">
+    <span class="eyebrow" data-reveal><span class="dot"></span>Technology</span>
+    <h1 data-reveal style="--d:.08s">Specialist AI, <span class="grad-text">working together.</span></h1>
+    <p class="lead" data-reveal style="--d:.16s">CredZenta is built on a coordinated, multi-agent AI architecture — where each component does one job exceptionally well, and every output is checked, explained and reviewable.</p>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="section" style="padding-top:20px">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Architecture</span>
+      <h2>Not one model. A coordinated system.</h2>
+      <p>Instead of relying on a single general-purpose model, CredZenta uses specialised AI components for different parts of the appraisal — reading documents, analysing financials, verifying information and assembling the memo. An orchestration layer coordinates them, and deterministic checks keep the output grounded in your data and your policy.</p>
+    </div>
+    <div class="arch" data-reveal="zoom" role="img" aria-label="Abstract diagram: data flows in, a ring of specialist AI components coordinated by an orchestration core processes it, and an explainable output flows out.">
+      <svg class="arch-wide" viewBox="0 0 1200 500" aria-hidden="true">
+        <defs>
+          <linearGradient id="ag" x1="0" x2="1"><stop offset="0" stop-color="#5233F5"/><stop offset="1" stop-color="#14D9A7"/></linearGradient>
+          <radialGradient id="coreg"><stop offset="0" stop-color="#1B2A66"/><stop offset="1" stop-color="#0B1538"/></radialGradient>
+        </defs>
+        <!-- data in -->
+        <rect x="50" y="170" width="220" height="160" rx="22" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.14)"/>
+        <text class="sub" x="76" y="206">Input</text>
+        <text class="lbl" x="76" y="232">Data in</text>
+        <rect x="76" y="252" width="44" height="54" rx="7" fill="none" stroke="#8F7BFF" stroke-opacity=".7"/>
+        <rect x="132" y="252" width="44" height="54" rx="7" fill="none" stroke="#8F7BFF" stroke-opacity=".7"/>
+        <rect x="188" y="252" width="44" height="54" rx="7" fill="none" stroke="#14D9A7" stroke-opacity=".7"/>
+        <path d="M86 268h24M86 278h18M86 288h22M142 268h24M142 278h14M142 288h20M198 268h24M198 278h18M198 288h12" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-linecap="round"/>
+        <!-- flows -->
+        <path id="fin" class="flow-path" d="M270 250 C 360 250, 400 250, 470 250" stroke="url(#ag)" stroke-width="2.5" fill="none"/>
+        <path id="fout" class="flow-path" d="M730 250 C 800 250, 840 250, 930 250" stroke="url(#ag)" stroke-width="2.5" fill="none"/>
+        <circle r="6" fill="#14D9A7"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#fin"/></animateMotion></circle>
+        <circle r="6" fill="#14D9A7"><animateMotion dur="2.2s" begin="1.1s" repeatCount="indefinite"><mpath href="#fout"/></animateMotion></circle>
+        <!-- orbit ring -->
+        <circle cx="600" cy="250" r="170" fill="none" stroke="rgba(255,255,255,.12)" stroke-dasharray="3 9"/>
+        <circle cx="600" cy="250" r="110" fill="none" stroke="rgba(82,51,245,.35)"/>
+        <circle class="pulse-ring" cx="600" cy="250" r="80" fill="none" stroke="#14D9A7" stroke-opacity=".6"/>
+        <g class="orbit">
+          <g stroke="rgba(143,123,255,.35)" stroke-width="1.2">
+            <line x1="600" y1="250" x2="600" y2="80"/><line x1="600" y1="250" x2="747" y2="165"/><line x1="600" y1="250" x2="747" y2="335"/>
+            <line x1="600" y1="250" x2="600" y2="420"/><line x1="600" y1="250" x2="453" y2="335"/><line x1="600" y1="250" x2="453" y2="165"/>
+          </g>
+          <g class="node"><circle cx="600" cy="80" r="24" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle class="node-dot" cx="600" cy="80" r="7" fill="#14D9A7"/></g>
+          <g class="node"><circle cx="747" cy="165" r="24" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle class="node-dot" cx="747" cy="165" r="7" fill="#8F7BFF" style="animation-delay:-.4s"/></g>
+          <g class="node"><circle cx="747" cy="335" r="24" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle class="node-dot" cx="747" cy="335" r="7" fill="#14D9A7" style="animation-delay:-.8s"/></g>
+          <g class="node"><circle cx="600" cy="420" r="24" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle class="node-dot" cx="600" cy="420" r="7" fill="#8F7BFF" style="animation-delay:-1.2s"/></g>
+          <g class="node"><circle cx="453" cy="335" r="24" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle class="node-dot" cx="453" cy="335" r="7" fill="#14D9A7" style="animation-delay:-1.6s"/></g>
+          <g class="node"><circle cx="453" cy="165" r="24" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle class="node-dot" cx="453" cy="165" r="7" fill="#8F7BFF" style="animation-delay:-2s"/></g>
+        </g>
+        <!-- core -->
+        <circle cx="600" cy="250" r="72" fill="url(#coreg)" stroke="url(#ag)" stroke-width="2.5"/>
+        <image href="assets/img/logo-mark.png" x="574" y="206" width="52" height="60"/>
+        <text class="sub" x="600" y="290" text-anchor="middle" style="font-size:9.5px">Orchestration</text>
+        <!-- output -->
+        <rect x="930" y="170" width="220" height="160" rx="22" fill="rgba(20,217,167,.06)" stroke="rgba(20,217,167,.4)"/>
+        <text class="sub" x="956" y="206">Output</text>
+        <text class="lbl" x="956" y="232">Explainable output</text>
+        <rect x="956" y="254" width="168" height="12" rx="6" fill="rgba(255,255,255,.08)"/><rect x="956" y="254" width="62" height="12" rx="6" fill="#14D9A7"/>
+        <path d="M958 286h110M958 304h80" stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="1110" cy="296" r="12" fill="#14D9A7"/><path d="m1104 296 4 4 8-8" stroke="#071232" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+      <svg class="arch-tall" viewBox="0 0 400 720" aria-hidden="true">
+        <rect x="70" y="20" width="260" height="110" rx="20" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.14)"/>
+        <text class="sub" x="96" y="56">Input</text><text class="lbl" x="96" y="84" style="font-size:20px">Data in</text>
+        <rect x="236" y="48" width="30" height="38" rx="5" fill="none" stroke="#8F7BFF"/><rect x="274" y="48" width="30" height="38" rx="5" fill="none" stroke="#14D9A7"/>
+        <path id="fin2" class="flow-path" d="M200 130 V 225" stroke="url(#ag)" stroke-width="3" fill="none"/>
+        <path id="fout2" class="flow-path" d="M200 495 V 590" stroke="url(#ag)" stroke-width="3" fill="none"/>
+        <circle r="7" fill="#14D9A7"><animateMotion dur="1.8s" repeatCount="indefinite"><mpath href="#fin2"/></animateMotion></circle>
+        <circle r="7" fill="#14D9A7"><animateMotion dur="1.8s" begin=".9s" repeatCount="indefinite"><mpath href="#fout2"/></animateMotion></circle>
+        <circle cx="200" cy="360" r="130" fill="none" stroke="rgba(255,255,255,.12)" stroke-dasharray="3 9"/>
+        <g style="transform-origin:200px 360px;animation:spin 36s linear infinite">
+          <circle cx="200" cy="230" r="20" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle cx="313" cy="295" r="20" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/>
+          <circle cx="313" cy="425" r="20" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle cx="200" cy="490" r="20" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/>
+          <circle cx="87" cy="425" r="20" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/><circle cx="87" cy="295" r="20" fill="#0F1B48" stroke="url(#ag)" stroke-width="2"/>
+          <circle cx="200" cy="230" r="6" fill="#14D9A7"/><circle cx="313" cy="295" r="6" fill="#8F7BFF"/><circle cx="313" cy="425" r="6" fill="#14D9A7"/><circle cx="200" cy="490" r="6" fill="#8F7BFF"/><circle cx="87" cy="425" r="6" fill="#14D9A7"/><circle cx="87" cy="295" r="6" fill="#8F7BFF"/>
+        </g>
+        <circle cx="200" cy="360" r="66" fill="url(#coreg)" stroke="url(#ag)" stroke-width="2.5"/>
+        <image href="assets/img/logo-mark.png" x="176" y="318" width="48" height="56"/>
+        <text class="sub" x="200" y="396" text-anchor="middle" style="font-size:12px">Orchestration</text>
+        <rect x="70" y="590" width="260" height="110" rx="20" fill="rgba(20,217,167,.06)" stroke="rgba(20,217,167,.4)"/>
+        <text class="sub" x="96" y="626">Output</text><text class="lbl" x="96" y="654" style="font-size:20px">Explainable output</text>
+        <rect x="96" y="672" width="200" height="10" rx="5" fill="rgba(255,255,255,.08)"/><rect x="96" y="672" width="74" height="10" rx="5" fill="#14D9A7"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- PIPELINE -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">The intelligence pipeline</span>
+      <h2>Six stages. <span class="grad-text">Every one reviewable.</span></h2>
+    </div>
+    <div class="pipeline" data-reveal>
+      <div class="pipe"><span class="pipe-n">01</span><span class="icon-box">{{icon:upload}}</span><h3>Ingest</h3><p>Documents and data enter a secure, isolated workspace.</p></div>
+      <div class="pipe"><span class="pipe-n">02</span><span class="icon-box">{{icon:scan}}</span><h3>Extract</h3><p>Unstructured documents become structured, validated data.</p></div>
+      <div class="pipe"><span class="pipe-n">03</span><span class="icon-box">{{icon:git-merge}}</span><h3>Verify</h3><p>Information is cross-checked across sources to catch inconsistencies.</p></div>
+      <div class="pipe"><span class="pipe-n">04</span><span class="icon-box">{{icon:bar-chart}}</span><h3>Analyse</h3><p>Financial health, cash flow and risk are assessed against your policy.</p></div>
+      <div class="pipe"><span class="pipe-n">05</span><span class="icon-box">{{icon:eye}}</span><h3>Explain</h3><p>Every result is paired with its reasons and its sources.</p></div>
+      <div class="pipe"><span class="pipe-n">06</span><span class="icon-box">{{icon:user-check}}</span><h3>Review</h3><p>Your team stays in control and makes the final decision.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLAINABLE AI -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Explainable AI</span>
+      <h2>Transparent by design.</h2>
+    </div>
+    <div class="grid g3">
+      <article class="card" data-reveal><span class="icon-box">{{icon:link}}</span><h3>Source-linked insights</h3><p>Every figure traces back to the document it came from.</p></article>
+      <article class="card" data-reveal style="--d:.1s"><span class="icon-box teal">{{icon:message}}</span><h3>Reason codes</h3><p>Plain-language explanations for every risk signal.</p></article>
+      <article class="card" data-reveal style="--d:.2s"><span class="icon-box">{{icon:eye}}</span><h3>No hidden decisions</h3><p>CredZenta recommends; your credit team decides.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- HUMAN IN THE LOOP -->
+<section class="section section-alt">
+  <div class="container hitl">
+    <div class="split-copy" data-reveal="left">
+      <span class="kicker">Human-in-the-loop</span>
+      <h2>AI that supports judgement, <span class="grad-text">never replaces it.</span></h2>
+      <p>Credit is a judgement call. CredZenta handles the heavy lifting, but every assessment is reviewable, editable and approved by people — so accountability stays where it belongs.</p>
+      <ul class="clean ticks"><li>{{icon:check}} Reviewable</li><li>{{icon:check}} Editable</li><li>{{icon:check}} Approved by people</li></ul>
+    </div>
+    <div class="loop-vis" data-reveal="right" aria-hidden="true">
+      <svg viewBox="0 0 500 400">
+        <defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#5233F5"/><stop offset="1" stop-color="#14D9A7"/></linearGradient></defs>
+        <circle class="spin-path" cx="250" cy="200" r="130" fill="none" stroke="url(#lg)" stroke-width="2.5"/>
+        <circle r="7" fill="#14D9A7"><animateMotion dur="6s" repeatCount="indefinite" path="M250 70 a130 130 0 1 1 -0.1 0"/></circle>
+        <g transform="translate(250 70)"><circle r="34" fill="var(--surface)" stroke="#5233F5" stroke-width="2"/><image href="assets/img/logo-mark.png" x="-15" y="-18" width="30" height="35"/></g>
+        <text class="lbl" x="250" y="24" text-anchor="middle">CredZenta prepares</text>
+        <g transform="translate(363 265)"><circle r="34" fill="var(--surface)" stroke="#14D9A7" stroke-width="2"/><path d="M-10-12h14l6 6v18h-20zM-5 2h10M-5 8h7" stroke="#0FB88E" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <text class="lbl" x="420" y="330" text-anchor="middle">Team reviews &amp; edits</text>
+        <g transform="translate(137 265)"><circle r="34" fill="var(--surface)" stroke="#5233F5" stroke-width="2"/><path d="m-11 1 7 7 15-15" stroke="#5233F5" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <text class="lbl" x="90" y="330" text-anchor="middle">Team approves</text>
+        <text class="sub" x="250" y="196" text-anchor="middle">ACCOUNTABILITY</text>
+        <text class="lbl" x="250" y="218" text-anchor="middle">stays with people</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Integrations</span>
+      <h2>Fits into your lending stack.</h2>
+      <p>CredZenta is built with a modular integration layer, so it connects to the data sources and systems lenders already rely on — and new connections can be added without disrupting your workflow.</p>
+    </div>
+    <div class="grid g3">
+      <!-- TODO: confirm before launch — Account Aggregator, GST, bureau and KYC integrations -->
+      <div class="card integ" data-reveal><span class="icon-box">{{icon:network}}</span><h3>Consent-based financial data (Account Aggregator framework)</h3></div>
+      <div class="card integ" data-reveal style="--d:.06s"><span class="icon-box teal">{{icon:receipt}}</span><h3>GST and tax data</h3></div>
+      <div class="card integ" data-reveal style="--d:.12s"><span class="icon-box">{{icon:gauge}}</span><h3>Credit bureau data</h3></div>
+      <div class="card integ" data-reveal style="--d:.18s"><span class="icon-box teal">{{icon:id-card}}</span><h3>KYC and identity verification</h3></div>
+      <div class="card integ" data-reveal style="--d:.24s"><span class="icon-box">{{icon:api}}</span><h3>Loan origination &amp; management systems (via API)</h3></div>
+      <div class="card integ" data-reveal style="--d:.3s"><span class="icon-box teal">{{icon:upload}}</span><h3>Secure document upload</h3></div>
+    </div>
+    <p class="note">Integration availability may vary by deployment.</p>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section class="section section-alt" id="security">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Security &amp; data protection</span>
+      <h2>Security that regulated lenders expect.</h2>
+    </div>
+    <div class="grid g4">
+      <article class="card" data-reveal><span class="icon-box">{{icon:lock}}</span><h3>Encryption</h3><p>Data encrypted in transit and at rest.</p></article>
+      <article class="card" data-reveal style="--d:.06s"><span class="icon-box teal">{{icon:layers}}</span><h3>Tenant isolation</h3><p>Every institution's data is logically separated.</p></article>
+      <article class="card" data-reveal style="--d:.12s"><span class="icon-box">{{icon:key}}</span><h3>Role-based access</h3><p>People see only what their role requires.</p></article>
+      <article class="card" data-reveal style="--d:.18s"><span class="icon-box teal">{{icon:history}}</span><h3>Full audit logs</h3><p>Every action is recorded and reviewable.</p></article>
+      <article class="card" data-reveal><span class="icon-box">{{icon:user-check}}</span><h3>Consent-first data</h3><p>Borrower data is accessed only with proper consent.</p></article>
+      <article class="card" data-reveal style="--d:.06s"><span class="icon-box teal">{{icon:filter}}</span><h3>Data minimisation</h3><p>We process only what the appraisal needs.</p></article>
+      <!-- TODO: confirm before launch — data residency in India -->
+      <article class="card" data-reveal style="--d:.12s"><span class="icon-box">{{icon:map-pin}}</span><h3>Data residency in India</h3><p>Borrower data stays within India.</p></article>
+      <article class="card mv grad-border" data-reveal style="--d:.18s;padding:30px"><span class="icon-box teal">{{icon:shield-check}}</span><h3 style="font-size:1.2rem;margin:18px 0 10px">Built with regulation in mind</h3><p style="font-size:1rem;color:var(--muted)">Designed with India's data-protection and lending regulations in mind.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- DEPLOYMENT -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="kicker">Deployment</span>
+      <h2>Start fast. Scale on your terms.</h2>
+    </div>
+    <div class="grid g2">
+      <article class="card aud-card" data-reveal><span class="icon-box">{{icon:cloud}}</span><h3>Cloud SaaS</h3><p>Get started quickly with a secure, multi-tenant cloud platform.</p></article>
+      <!-- TODO: confirm before launch — dedicated deployment availability / roadmap -->
+      <article class="card aud-card" data-reveal style="--d:.1s"><span class="icon-box teal">{{icon:server}}</span><h3>Dedicated deployment <span class="badge-soon">Roadmap</span></h3><p>For larger institutions with specific requirements.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band" data-reveal="zoom">
+      <img class="mark" src="assets/img/logo-mark.png" alt="" width="126" height="145" loading="lazy">
+      <h2>Want the technical deep-dive?</h2>
+      <p>Our team can walk your technology and risk teams through architecture and security in detail.</p>
+      <div class="cta-row"><a class="btn btn-light" href="contact.html?type=technical">Book a Technical Demo {{icon:arrow-right}}</a></div>
+    </div>
+  </div>
+</section>
