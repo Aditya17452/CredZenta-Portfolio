@@ -5,6 +5,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { icons } from './src/icons.mjs';
 
+const BUILD_ID = Date.now().toString(36);
 const SITE_URL = 'https://www.credzenta.com'; // TODO: confirm production domain before launch
 const ROOT = fileURLToPath(new URL('.', import.meta.url));
 const SRC = join(ROOT, 'src', 'pages');
@@ -122,7 +123,7 @@ function layout({ meta, body }, file) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=${BUILD_ID}">
 <script>try{var t=localStorage.getItem('cz-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>${jsonLd}
 </head>
 <body class="page-${meta.nav || 'other'}">
@@ -131,7 +132,7 @@ ${header(meta.nav)}
 ${body.trim()}
 </main>
 ${footer}
-<script src="assets/js/main.js" defer></script>
+<script src="assets/js/main.js?v=${BUILD_ID}" defer></script>
 </body>
 </html>
 `;
