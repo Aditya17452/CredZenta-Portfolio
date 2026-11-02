@@ -338,8 +338,11 @@
     const ENDPOINT = 'https://formsubmit.co/ajax/sakshamservices2025@gmail.com';
     const status = $('.form-status', form);
     const btn = $('button[type="submit"]', form);
-    if (new URLSearchParams(location.search).get('type') === 'technical') {
+    const enquiry = new URLSearchParams(location.search).get('type');
+    if (enquiry === 'technical') {
       $('#f-msg').value = 'Technical deep-dive: architecture, security and integrations.';
+    } else if (enquiry === 'careers') {
+      $('#f-msg').value = 'Careers enquiry: I would like to join the CredZenta team.';
     }
     const emailRe =/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     const rules = {
@@ -401,7 +404,7 @@
         'What they would like to see': fd.get('message').trim() || '—',
         'Consent to contact': 'Yes',
         'Submitted from': location.href,
-        _subject: `New CredZenta demo request — ${fd.get('institution').trim()}`,
+        _subject: `New CredZenta ${enquiry === 'careers' ? 'careers enquiry' : 'demo request'} — ${fd.get('institution').trim()}`,
         _replyto: fd.get('email').trim(),
         _template: 'table',
         _captcha: 'false',
