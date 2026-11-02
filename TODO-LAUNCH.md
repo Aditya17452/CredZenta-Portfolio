@@ -11,7 +11,7 @@ Items tagged `[confirm]` / `[fill]` / roadmap in the content doc. Each is marked
 - [ ] **Co-lending & Partnerships** (Use Cases #5) — shown with a "Coming soon" badge.
 
 ## Details to fill
-- [ ] **Production domain** — `SITE_URL` in `build.mjs` (currently `https://www.credzenta.com`); used for canonical URLs, sitemap, Open Graph.
+- [ ] **Production domain** — `SITE_URL` in `build.mjs` (currently `https://credzenta.vercel.app`); used for canonical URLs, sitemap, Open Graph.
 - [ ] **LinkedIn URL** — footer and Contact page use `https://www.linkedin.com/company/credzenta`.
 - [ ] **Contact email** — the content doc had `[contact@yourdomain]`; the site uses `sakshamservices2025@gmail.com` everywhere. Swap in a domain email later if you set one up.
 - [ ] **Legal pages** — Privacy Policy, Terms of Use and Responsible AI are short drafts marked "Draft — under legal review".

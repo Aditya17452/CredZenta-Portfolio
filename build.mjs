@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { icons } from './src/icons.mjs';
 
 const BUILD_ID = Date.now().toString(36);
-const SITE_URL = 'https://www.credzenta.com'; // TODO: confirm production domain before launch
+const SITE_URL = 'https://credzenta.vercel.app'; // TODO: switch to the custom domain once one is connected
 const ROOT = fileURLToPath(new URL('.', import.meta.url));
 const SRC = join(ROOT, 'src', 'pages');
 const OUT = join(ROOT, 'dist');
