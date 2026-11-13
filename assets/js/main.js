@@ -335,7 +335,7 @@
   /* ---------- demo request form → email (FormSubmit) ---------- */
   const form = $('#demo-form');
   if (form) {
-    const ENDPOINT = 'https://formsubmit.co/ajax/sakshamservices2025@gmail.com';
+    const ENDPOINT = 'https://formsubmit.co/ajax/aa99da1c52067407745fadecc94018d1';
     const status = $('.form-status', form);
     const btn = $('button[type="submit"]', form);
     const enquiry = new URLSearchParams(location.search).get('type');
